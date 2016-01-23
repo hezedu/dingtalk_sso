@@ -41,7 +41,7 @@ Api.prototype.getSSOUserInfoByCode = function(code, callback) {
 //生成授权链接
 Api.prototype.generateAuthUrl = function(redirect_url) {
   return 'https://oa.dingtalk.com/omp/api/micro_app/admin/landing?corpid=' + 
-  this.corpid + '&redirect_url=' + encodeURIComponent(redirect_url);
+  this.corpid + '&redirect_url=' + redirect_url;
 };
 
 
