@@ -21,7 +21,7 @@
   },
   "licenses": "MIT",
   "email": "hezedu@hotmail.com",
-  "description": "钉钉免登接口，ISV套件和企业号通用。",
+  "description": "钉钉免登接口，ISV和企业号通用。",
   "bugs": {
     "url": "https://github.com/hezedu/dingtalk_sso/issues"
   }
