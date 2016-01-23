@@ -24,5 +24,5 @@ api.generateAuthUrl(redirect_url)
 ```
 ##更多钉钉相关
 ISV套件主动调用API: [dingtalk_suite](https://github.com/hezedu/dingtalk_suite)<br>
-ISV套件回调serverAPI: [dingtalk_suite_callback](https://github.com/hezedu/dingtalk_suite_callback)<br>
+ISV套件回调server: [dingtalk_suite_callback](https://github.com/hezedu/dingtalk_suite_callback)<br>
 企业号API: [dingtalk_enterprise](https://github.com/hezedu/dingtalk_enterprise)
