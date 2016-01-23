@@ -2,7 +2,6 @@ var agent = require('superagent');
 var util = require('./util');
 
 var SSO_BASE_URL = 'https://oapi.dingtalk.com';
-var auth_url = 'https://oa.dingtalk.com/omp/api/micro_app/admin/landing?corpid=CORPID&redirect_url=REDIRECT_URL'
 
 var Api = function(conf) {
   this.SSOSecret = conf.SSOSecret;
@@ -11,8 +10,6 @@ var Api = function(conf) {
 
 Api.prototype.getSSOToken = function(callback) {
   var self = this;
-  console.log('corpid', self.corpid);
-  console.log('corpsecret', self.SSOSecret);
   agent.get(SSO_BASE_URL + '/sso/gettoken')
     .query({
       corpid: self.corpid,
@@ -28,7 +25,6 @@ Api.prototype.getSSOUserInfoByCode = function(code, callback) {
     if (err) {
       return callback(err);
     };
-    console.log('SSO token', token);
     agent.get(SSO_BASE_URL + '/sso/getuserinfo')
       .query({
         code: code,
