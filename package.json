@@ -1,0 +1,28 @@
+{
+  "name": "dingtalk_sso",
+  "version": "0.0.1",
+  "main": "index",
+  "keywords": [
+    "dingtalk",
+    "SSO",
+    "suite",
+    "ISV",
+    "nodejs"
+  ],
+  "author": {
+    "name": "hezedu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hezedu/dingtalk_sso.git"
+  },
+  "dependencies": {
+    "superagent": "1.6.1"
+  },
+  "licenses": "MIT",
+  "email": "hezedu@hotmail.com",
+  "description": "钉钉免登接口，ISV套件和企业号通用。",
+  "bugs": {
+    "url": "https://github.com/hezedu/dingtalk_sso/issues"
+  }
+}
