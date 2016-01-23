@@ -1,5 +1,5 @@
 # dingtalk sso
-钉钉免登接口，ISV套件和企业号通用。
+钉钉免登接口，ISV和企业号通用。
 
 ##安装 
 `npm install dingtalk_sso`
@@ -11,7 +11,9 @@ var conf = {
     corpid: 'dingxxxxxxxxxxxxxxx',
     SSOSecret:'C1oXyeJUgH_QXEHYJS4-Um-zxfxxxxxxxxxxxxxxxxxx-6np3fXskv5dGs'
   }
+//ISV的corpid，SSOSecret在 http://console.d.aliyun.com/#/dingding/env 查看。
 var api = new dingtalk_sso(conf);
+
 ```
 ##方法
 ### 通过CODE(免登授权码)换取用户身份
